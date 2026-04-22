@@ -1,20 +1,19 @@
 using Soenneker.Sentry.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Sentry.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class SentryOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class SentryOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly ISentryOpenApiClientUtil _openapiclientutil;
 
-    public SentryOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public SentryOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<ISentryOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
