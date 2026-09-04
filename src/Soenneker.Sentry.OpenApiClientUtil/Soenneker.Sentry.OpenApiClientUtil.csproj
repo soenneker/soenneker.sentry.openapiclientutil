@@ -43,6 +43,5 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.Sentry.HttpClients" Version="4.0.93" />
         <PackageReference Include="Soenneker.Sentry.OpenApiClient" Version="4.0.78" />
-        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.831" />
     </ItemGroup>
 </Project>
