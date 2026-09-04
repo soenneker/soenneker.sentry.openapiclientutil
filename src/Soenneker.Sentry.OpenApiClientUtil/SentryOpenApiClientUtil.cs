@@ -12,6 +12,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Sentry.OpenApiClientUtil;
 
+/// <inheritdoc cref="ISentryOpenApiClientUtil" />
 public sealed class SentryOpenApiClientUtil : ISentryOpenApiClientUtil
 {
     private readonly AsyncSingleton<SentryOpenApiClient> _client;
