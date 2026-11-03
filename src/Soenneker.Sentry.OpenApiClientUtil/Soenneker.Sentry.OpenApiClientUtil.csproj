@@ -45,6 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Sentry.HttpClients" Version="11.0.161" />
-        <PackageReference Include="Soenneker.Sentry.OpenApiClient" Version="11.0.145" />
+        <PackageReference Include="Soenneker.Sentry.OpenApiClient" Version="11.0.146" />
     </ItemGroup>
 </Project>
